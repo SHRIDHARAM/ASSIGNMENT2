@@ -1,0 +1,109 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[margin=1in,top=0.7cm, footskip=0.25in]{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{textcomp}
+\usepackage{listings}
+
+
+
+\title{\textbf{\Huge Assignment 2}}
+\author{\textbf{\Large Shridharam Tiwari - SM21MTECH12003}}
+
+
+\begin{document}
+ 
+
+
+
+\providecommand{\mbf}{\mathbf}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\maketitle
+
+
+
+\section*{Ch-3, Ex-5, Q.3}
+\vspace{0.35cm}
+
+
+
+\textbf{1. Find tbe bisectors of acute angles between tbe pairs of
+lines\\
+\vspace{0.1cm} }
+
+\begin{align}
+3x+4y-9=0  \\ 12x+5y-3=0
+\end{align}
+
+
+\vspace{0.1cm}
+
+\textbf{Solution:}  
+
+\vspace{0.2cm}
+Angle bisector of two lines is the line which bisects the angle between the two lines is the locus of a point which is equidistant from the two lines. Suppose we have two lines 
+
+\begin{align}
+L_1 : A_1x + B_1y + C_1 = 0 \\
+L_2 : A_2x + B_2y + C_2 = 0 
+\end{align}
+
+
+\vspace{0.2cm} 
+
+The angle bisectors is given by,
+\begin{align}
+\frac{A_1x + B_1y + C_1}{\sqrt{(A_1)^2 + (B_1)^2}} = \pm \frac{A_2x + B_2y + C_2}{\sqrt{(A_2)^2 + (B_2)^2}}
+\end{align}
+
+
+\vspace{0.5cm} 
+\textbf{(i) Check where origin lies}
+\vspace{0.5cm} 
+
+We need to check the sign of {C_1C_2(A_1A_2+B_1B_2).} \\
+
+The positive sign refers that the origin is contained by the obtuse angle, and the negative sign refers that origin is contained by the acute angle. 
+From our equations we are getting positive sign which means that origin is contained by obtuse angle. Acute angle doesn't contain origin.  
+
+Since the sign of constants of both the lines are same, the angle bisector not containing origin is given by,
+\begin{align}
+\frac{A_1x + B_1y + C_1}{\sqrt{(A_1)^2 + (B_1)^2}} = - \frac{A_2x + B_2y + C_2}{\sqrt{(A_2)^2 + (B_2)^2}}
+\end{align}
+
+\begin{align}
+\frac{3x + 4y - 9}{\sqrt{(3)^2 + (4)^2}} = - \frac{12x + 5y - 3}{\sqrt{(12)^2 + (5)^2}}
+\end{align}
+
+\begin{align}
+\frac{3x + 4y - 9}{5} = - \frac{12x + 5y - 3}{13}
+\end{align}
+
+By solving above equation, the bisector which bisects the angle not containing the origin i.e acute angle bisector is given by,
+
+\begin{align}
+9x + 7y - 12 = 0 
+\end{align}
+
+
+The other bisector is given by,
+\begin{align}
+7x - 9y + 34 = 0
+\end{align}
+
+
+
+\textbf{Download python code at }
+\begin{lstlisting}[frame=single] 
+https://github.com/SHRIDHARAM
+/ASSIGNMENT2
+\end{lstlisting}
+
+
+
+\end{document}
+
